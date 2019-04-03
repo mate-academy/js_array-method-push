@@ -1,8 +1,8 @@
 {
-  "name": "array-method-indexof",
+  "name": "array-method-push",
   "version": "1.0.0",
-  "description": "Custom implementation of Array.prototype.indexOf()",
-  "main": "src/arrayMethodIndexOf.js",
+  "description": "Custom implementation of Array.prototype.push()",
+  "main": "src/arrayMethodPush.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint **/*.js"
