@@ -7,8 +7,8 @@
  */
 
 function applyCustomPush() {
-  [].__proto__.push2 = function() {
-    // write code here
+  [].__proto__.push2 = function(...args) {
+    return this.push(...args);
   };
 }
 
