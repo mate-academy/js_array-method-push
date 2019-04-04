@@ -4,7 +4,7 @@ const applyCustomPush = require('./arrayMethodPush');
 applyCustomPush();
 
 test('`push2` is added to [].__proto__', () => {
-    expect(typeof [].push2).toBe('function');
+  expect(typeof [].push2).toBe('function');
 });
 
 test('push single item', () => {
@@ -34,4 +34,3 @@ test('push an array', () => {
   expect(source).toEqual([0, 1, 2, 3, [4, 5, 6]]);
   expect(result).toBe(5);
 });
-
