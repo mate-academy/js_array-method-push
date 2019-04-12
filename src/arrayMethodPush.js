@@ -2,10 +2,9 @@
 
 /**
  * Implement method push
- *
  */
 function applyCustomPush() {
-  [].__proto__.push2 = function() {
+  [].__proto__.push2 = function(...args) {
     // write code here
   };
 }
