@@ -9,7 +9,7 @@ test('push2 is added to [].__proto__', () => {
 });
 
 test(`push2 doesn't call default push`, () => {
-  expect([].push2.toString().includes('.push'))
+  expect([].push2.toString().includes('.push('))
     .toBe(false);
 });
 
