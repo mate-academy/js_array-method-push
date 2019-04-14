@@ -9,8 +9,6 @@ function applyCustomPush() {
     for (let i = 0; i < args.length; i++) {
       this[this.length] = args[i];
     }
-    console.log(this);
-    console.log(this.length);
     return this.length;
   };
 }
