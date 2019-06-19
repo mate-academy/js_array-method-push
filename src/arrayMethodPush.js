@@ -8,7 +8,6 @@ function applyCustomPush() {
     // write code here
     for (const element of elements) {
       this[this.length] = element;
-      console.log(this.length);
     }
     return this.length;
   };
