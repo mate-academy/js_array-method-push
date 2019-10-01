@@ -5,7 +5,9 @@
  */
 function applyCustomPush() {
   [].__proto__.push2 = function(...elements) {
-    this.splice(this.length, 0, ...elements);
+    for (const item of elements) {
+      this[this.length] = item;
+    }
 
     return this.length;
   };
