@@ -5,7 +5,12 @@
  */
 function applyCustomPush() {
   [].__proto__.push2 = function(...elements) {
-    // write code here
+    for (const i of elements) {
+      const lengthOfArray = this.length;
+      this.splice(lengthOfArray, 1, i);
+    }
+
+    return this.length;
   };
 }
 
