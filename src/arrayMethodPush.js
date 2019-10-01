@@ -5,7 +5,13 @@
  */
 function applyCustomPush() {
   [].__proto__.push2 = function(...elements) {
-    // write code here
+
+    for (let key of elements) {
+
+      this[this.length] = key;
+    }
+
+    return this.length;
   };
 }
 
