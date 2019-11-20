@@ -5,11 +5,9 @@
  */
 function applyCustomPush() {
   [].__proto__.push2 = function(...elements) {
-    const result = elements;
-    let arr = this.length;
-    for (let i = 0; i < result.length; i++) {
-      this[arr] = result[i];
-      arr++;
+    for (let i = 0; i < elements.length; i++) {
+      this[this.length] = elements[i];
+      elements[i]++;
     }
     return this.length;
   };
