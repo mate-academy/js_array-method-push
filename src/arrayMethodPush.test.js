@@ -1,6 +1,7 @@
 'use strict';
 
 const applyCustomPush = require('./arrayMethodPush');
+
 applyCustomPush();
 
 test('push2 is added to [].__proto__', () => {
