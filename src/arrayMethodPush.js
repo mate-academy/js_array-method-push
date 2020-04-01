@@ -5,20 +5,20 @@
  */
 function applyCustomPush() {
   [].__proto__.push2 = function(...elements) {
-    const element = elements;
-    let pushLenght = this.reverse();
+    const addLenght = elements.length;
+    const thisStartLenght = this.length;
 
-    for (let i = 0; i < element.length; i++) {
-      pushLenght = this.unshift(element[i]);
+    this.length = this.length + addLenght;
+
+    for (let i = 0; i < thisStartLenght - 1; i++) {
+      this[i] = this[i];
     }
 
-    this.reverse();
-
-    if (element.length === 0) {
-      return pushLenght.length;
+    for (let i = thisStartLenght; i < this.length; i++) {
+      this[i] = elements[i - thisStartLenght];
     }
 
-    return pushLenght;
+    return this.length;
   };
 }
 
