@@ -4,7 +4,7 @@
  * Implement method push
  */
 function applyCustomPush() {
-  [1].__proto__.push2 = function(...elements) {
+  [].__proto__.push2 = function(...elements) {
     // write code here
     const myLength = this.length;
 
