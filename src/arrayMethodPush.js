@@ -16,8 +16,4 @@ function applyCustomPush() {
   };
 }
 
-// const source = [0, 1, 2, 3];
-
-// console.log(source.push2(4));
-
 module.exports = applyCustomPush;
