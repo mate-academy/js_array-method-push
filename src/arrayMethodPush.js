@@ -5,7 +5,14 @@
  */
 function applyCustomPush() {
   [].__proto__.push2 = function(...elements) {
-    // write code here
+    let index = this.length;
+
+    for (const element of elements) {
+      this[index] = element;
+      index++;
+    }
+
+    return this.length;
   };
 }
 
