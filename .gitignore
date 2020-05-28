@@ -1,4 +1,9 @@
+# IDE
 .idea
+.vscode
+
+# Node
 node_modules
-DS_Store
-yarn.lock
+
+# MacOS
+.DS_Store
