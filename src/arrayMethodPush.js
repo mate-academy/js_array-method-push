@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Implement method push
+ * Implement method push/
  */
 
 function applyCustomPush() {
