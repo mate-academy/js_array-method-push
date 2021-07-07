@@ -30,6 +30,7 @@ test('push multiple items', () => {
   const result = source.push2(4, 5, 6);
 
   expect(source)
+
     .toEqual([0, 1, 2, 3, 4, 5, 6]);
 
   expect(result)
@@ -38,9 +39,11 @@ test('push multiple items', () => {
 
 test('push no items', () => {
   const source = [0, 1, 2, 3];
+
   const result = source.push2();
 
   expect(source)
+
     .toEqual([0, 1, 2, 3]);
 
   expect(result)
@@ -49,9 +52,11 @@ test('push no items', () => {
 
 test('push an array', () => {
   const source = [0, 1, 2, 3];
+
   const result = source.push2([4, 5, 6]);
 
   expect(source)
+
     .toEqual([0, 1, 2, 3, [4, 5, 6]]);
 
   expect(result)
