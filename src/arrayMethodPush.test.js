@@ -16,6 +16,7 @@ test(`push2 doesn't call default push`, () => {
 
 test('push single item', () => {
   const source = [0, 1, 2, 3];
+
   const result = source.push2(4);
 
   expect(source)
