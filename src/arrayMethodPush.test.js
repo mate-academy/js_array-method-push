@@ -38,6 +38,7 @@ test('push multiple items', () => {
 
 test('push no items', () => {
   const source = [0, 1, 2, 3];
+
   const result = source.push2();
 
   expect(source)
